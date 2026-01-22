@@ -5,25 +5,25 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const stats = [
   {
-    value: 1247,
+    value: 4276,
     suffix: "+",
     label: "Schools Under Management",
     description: "Public sector schools managed across Punjab",
   },
   {
-    value: 567892,
+    value: 590820,
     suffix: "",
     label: "Students Enrolled",
     description: "Children receiving quality education",
   },
   {
-    value: 18500,
+    value: 21095,
     suffix: "+",
     label: "Teachers Trained",
     description: "Professional development programs completed",
   },
   {
-    value: 36,
+    value: 41,
     suffix: "",
     label: "Districts Covered",
     description: "Comprehensive coverage across Punjab",
@@ -33,51 +33,38 @@ const stats = [
 const leadershipMessages = [
   {
     role: "Chairperson's Message",
-    name: "Malik Shoaib Awan",
+    name: "Mr. Ali Raza",
     image: "/person1.png",
-    quotes: [
-      {
-        text: "The best of charity is when Muslim man gains knowledge, then he teaches it to his brothers (others).",
-        author: "(Muhammad PBUH)"
-      },
-      {
-        text: "Literacy is a bridge from misery to the hope, bulwark against poverty and a building block of development",
-        author: "(Kofi Annan)"
-      }
-    ],
-    description: "Punjab Education Foundation (PEF) is playing a leading role in the promotion of free quality education in the low income families through its private partners in all the 36 districts of the province. At the outset, I would point out that keeping in view PEF's immaculate performance and success in reaching out to the needy segments of the society, this Foundation has been entrusted by the Punjab Government to enrol around 2.5 million underprivileged children."
+    description: "The going on epoch is an era of knowledge. The role of knowledge has come to be identified as an engine of growth and a factor of production. Hence the buzzword of 'knowledge economies' has rained currency in the development of literature. In today's world, the knowledge provides the foundation stone on which the edifice of society has been erected. Therefore, for developing countries like Pakistan to be able to break the straitjacket of poverty, and retention of under-development, the related policy focuses on education to become the topmost national imperative and priority towards its goals.\n\nI am immensely proud that the Government of Punjab has risen to meet the challenges and trying the best efforts to fulfill its promise of promoting education in all over the province through the establishment of the Public-Private Partnership. The PEIMA is an appreciating supportive body for strengthening school education in the province. As per the 17 prescribed functions, the Commission would be able to undertake various programs aimed at the promotion of education in the province through a Public-Private Partnership."
   },
   {
-    role: "Managing Director's Message",
-    name: "Mr. Shahid Farid",
-    image: "/person2.png",
-    quotes: [
-      {
-        text: "The best of charity is when Muslim man gains knowledge, then he teaches it to his brothers (others).",
-        author: "(Muhammad PBUH)"
-      },
-      {
-        text: "Literacy is a bridge from misery to the hope, bulwark against poverty and a building block of development",
-        author: "(Kofi Annan)"
-      }
-    ],
-    description: "Punjab Education Foundation (PEF) is playing a leading role in the promotion of free quality education in the low income families through its private partners in all the 36 districts of the province. At the outset, I would point out that keeping in view PEF's immaculate performance and success in reaching out to the needy segments of the society, this Foundation has been entrusted by the Punjab Government to enrol around 2.5 million underprivileged children."
-  },
-  {
-    role: "Technocrat's Message",
-    name: "Dr. Basit Khan",
+    role: "Chief Executive Officer's Message",
+    name: "Mr. Imtiaz Shahid Gondal",
     image: "/person3.png",
-    quotes: [
-      {
-        text: "The best of charity is when Muslim man gains knowledge, then he teaches it to his brothers (others).",
-        author: "(Muhammad PBUH)"
-      },
-      {
-        text: "Literacy is a bridge from misery to the hope, bulwark against poverty and a building block of development",
-        author: "(Kofi Annan)"
-      }
-    ],
-    description: "Punjab Education Foundation (PEF) is playing a leading role in the promotion of free quality education in the low income families through its private partners in all the 36 districts of the province. At the outset, I would point out that keeping in view PEF's immaculate performance and success in reaching out to the needy segments of the society, this Foundation has been entrusted by the Punjab Government to enrol around 2.5 million underprivileged children."
+    description: "The Punjab Education Initiatives Management Authority (PEIMA) is geared towards building an educated Punjab by providing quality education through Public-Private Partnerships.\n\nPEIMA is committed to strengthening the existing assets and introducing new initiatives to improving equitable access, improving academic standards, and introducing mandatory faculty development programs to improve the teaching standards are a priority for PEIMA.\n\nMonitoring the educational standards of students is important. The assessment tools were developed by adopting best practices in the world and standardized test evaluation was ensured through the E-marking of assessment scripts.\n\nI strongly believe that education is the single best investment that can make our future. PEIMA is committed to uplifting the education sector in Punjab."
+  }
+];
+
+const leadershipTeam = [
+  {
+    name: "Mr. Ali Raza",
+    designation: "Chairperson",
+    image: "/person1.png"
+  },
+  {
+    name: "MR. Imtiaz Shahid Gondal",
+    designation: "Chief Executive Officer",
+    image: "/person3.png"
+  },
+  {
+    name: "Mr. Amjad Hussain",
+    designation: "Director (Program)",
+    image: "/person2.png"
+  },
+  {
+    name: "Ms. Sobia Samreen",
+    designation: "Director( Corporate Cooperations)",
+    image: "/person4.png"
   }
 ];
 
@@ -126,7 +113,7 @@ export function StatsSection() {
 
   const prevSlide = () => {
     setDirection(-1);
-    setCurrentIndex((prev) => (prev - 1 + leadershipMessages.length) % leadershipMessages.length);
+    setCurrentIndex((prev: number) => (prev - 1 + leadershipMessages.length) % leadershipMessages.length);
   };
 
   const slideVariants = {
@@ -199,7 +186,7 @@ export function StatsSection() {
                 x: { type: "spring", stiffness: 300, damping: 30 },
                 opacity: { duration: 0.2 }
               }}
-              className="flex flex-col md:flex-row min-h-[500px]"
+              className="flex flex-col md:flex-row min-h-[400px]"
             >
               {/* Image Container with Controls */}
               <div className="w-full md:w-2/5 relative overflow-hidden group">
@@ -225,33 +212,54 @@ export function StatsSection() {
               </div>
 
               {/* Text Content Container */}
-              <div className="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold text-green-600 mb-2">
+              <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
+                <h3 className="text-xl font-bold text-green-600 mb-2">
                   {leadershipMessages[currentIndex].role}
                 </h3>
-                <h4 className="text-4xl font-bold text-green-500 mb-8">
+                <h4 className="text-2xl font-bold text-green-500 mb-6">
                   {leadershipMessages[currentIndex].name}
                 </h4>
 
-                <div className="space-y-6 mb-8">
-                  {leadershipMessages[currentIndex].quotes.map((quote, idx) => (
-                    <div key={idx} className="space-y-2">
-                      <p className="text-lg font-semibold text-green-600 italic">
-                        "{quote.text}"
-                      </p>
-                      <span className="text-green-500 font-bold block">
-                        {quote.author}
-                      </span>
-                    </div>
-                  ))}
-                </div>
 
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-700 leading-relaxed text-sm">
                   {leadershipMessages[currentIndex].description}
                 </p>
               </div>
             </motion.div>
           </AnimatePresence>
+        </div>
+
+        {/* Leadership Team Row */}
+        <div className="mt-24">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {leadershipTeam.map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="relative mb-6">
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-white/20 rounded-full blur-xl animate-pulse" />
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white overflow-hidden shadow-2xl">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    />
+                  </div>
+                </div>
+                <h4 className="text-lg md:text-xl font-bold text-white mb-1 tracking-wider uppercase">
+                  {member.name}
+                </h4>
+                <p className="text-peima-gold font-medium text-sm md:text-base">
+                  Designation: {member.designation}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

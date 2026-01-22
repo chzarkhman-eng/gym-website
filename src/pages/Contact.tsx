@@ -116,8 +116,8 @@ export default function Contact() {
             >
               <h2 className="text-3xl font-bold text-foreground mb-6">Get In Touch</h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Whether you have questions about our programs, want to collaborate, or need 
-                assistance with educational initiatives, our team is ready to support you. 
+                Whether you have questions about our programs, want to collaborate, or need
+                assistance with educational initiatives, our team is ready to support you.
                 Feel free to reach out through any of the channels below.
               </p>
 
@@ -129,7 +129,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-foreground mb-1">Office Address</h4>
                     <p className="text-muted-foreground">
-                      12-A Wahdat Road, Lahore, Punjab, Pakistan
+                      50 Babar Block Garden Town, Lahore
                     </p>
                   </div>
                 </div>
@@ -139,9 +139,8 @@ export default function Contact() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Phone Numbers</h4>
-                    <p className="text-muted-foreground">+92 42 35761999</p>
-                    <p className="text-muted-foreground">+92 42 35761998</p>
+                    <h4 className="font-bold text-foreground mb-1">Phone Number</h4>
+                    <p className="text-muted-foreground">(042) 99232040</p>
                   </div>
                 </div>
 
@@ -172,18 +171,28 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map */}
-      <section className="h-96 bg-secondary">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5843854726947!2d74.3194897!3d31.4908903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905f2f1c0c0c5%3A0x4f5e8e5c8a7c8a7c!2sWahdat%20Road%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="PEIMA Location"
-        />
+      <section className="h-96 relative group cursor-pointer">
+        <a
+          href="https://maps.app.goo.gl/p45RUh9uchT3NyET7?g_st=aw"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-10"
+        >
+          <div className="w-full h-full bg-secondary flex items-center justify-center overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=2000"
+              alt="Map Background"
+              className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-primary/20 flex flex-col items-center justify-center text-center p-4">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg mb-4 group-hover:scale-110 transition-transform">
+                <MapPin className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-white drop-shadow-md">View Our Location on Google Maps</h3>
+              <p className="text-white fill-current mt-2 drop-shadow-md">Click to open directions</p>
+            </div>
+          </div>
+        </a>
       </section>
     </MainLayout>
   );

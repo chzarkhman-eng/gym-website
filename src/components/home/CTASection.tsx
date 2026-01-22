@@ -75,7 +75,7 @@ export function CTASection() {
               We're Here to Help You
             </h2>
             <p className="text-primary-foreground/80 mb-8 leading-relaxed">
-              Whether you have questions about our programs, want to collaborate, or need 
+              Whether you have questions about our programs, want to collaborate, or need
               assistance with educational initiatives, our team is ready to support you.
             </p>
 
@@ -87,7 +87,7 @@ export function CTASection() {
                 <div>
                   <h4 className="font-bold mb-1">Our Location</h4>
                   <p className="text-primary-foreground/70 text-sm">
-                    12-A Wahdat Road, Lahore, Punjab, Pakistan
+                    50 Babar Block, New Garden Town, Lahore, Punjab, Pakistan
                   </p>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export function CTASection() {
                 <div>
                   <h4 className="font-bold mb-1">Phone Number</h4>
                   <p className="text-primary-foreground/70 text-sm">
-                    +92 42 35761999
+                    +92 42 99232040
                   </p>
                 </div>
               </div>

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check, Target, Eye, Award } from "lucide-react";
-import aboutBuilding from "@/assets/about-building.jpg";
 
 export function AboutSection() {
   const ref = useRef(null);
@@ -21,7 +20,7 @@ export function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-peima-lg">
               <img
-                src={aboutBuilding}
+                src="/peimapic.png"
                 alt="PEIMA Office"
                 className="w-full h-[500px] object-cover"
               />
@@ -57,12 +56,12 @@ export function AboutSection() {
               About PEIMA
             </span>
             <h2 className="section-title text-foreground mb-6">
-              Transforming Education in Punjab
+              Government of Punjab’s School Support Programs
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              The Punjab Education Initiatives Management Authority (PEIMA) is a government body 
-              dedicated to designing, implementing, and managing reformatory initiatives in the 
-              education sector. We focus on enhancing educational quality in public sector schools 
+              The Punjab Education Initiatives Management Authority (PEIMA) is a government body
+              dedicated to designing, implementing, and managing reformatory initiatives in the
+              education sector. We focus on enhancing educational quality in public sector schools
               through financial and technical assistance.
             </p>
 
@@ -75,7 +74,7 @@ export function AboutSection() {
                 <div>
                   <h4 className="font-bold text-foreground mb-1">Our Vision</h4>
                   <p className="text-sm text-muted-foreground">
-                    To become a leading institution for quality public education in Pakistan, 
+                    To become a leading institution for quality public education in Pakistan,
                     setting benchmarks for educational excellence.
                   </p>
                 </div>
@@ -88,7 +87,7 @@ export function AboutSection() {
                 <div>
                   <h4 className="font-bold text-foreground mb-1">Our Mission</h4>
                   <p className="text-sm text-muted-foreground">
-                    Promoting free quality education through innovative programs, teacher 
+                    Promoting free quality education through innovative programs, teacher
                     development, and infrastructure enhancement.
                   </p>
                 </div>

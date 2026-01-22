@@ -144,13 +144,13 @@ export function Footer() {
               <li className="flex items-start gap-3 text-sm">
                 <MapPin className="h-5 w-5 text-peima-gold shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80">
-                  12-A Wahdat Road, Lahore, Punjab, Pakistan
+                  50 Babar Block Garden Town, Lahore
                 </span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="h-5 w-5 text-peima-gold shrink-0" />
-                <a href="tel:+924235761999" className="text-primary-foreground/80 hover:text-peima-gold transition-colors">
-                  +92 42 35761999
+                <a href="tel:+924299232040" className="text-primary-foreground/80 hover:text-peima-gold transition-colors">
+                  (042) 99232040
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm">
