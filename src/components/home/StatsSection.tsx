@@ -57,8 +57,8 @@ const leadershipTeam = [
     image: "/person3.png"
   },
   {
-    name: "Mr. Amjad Hussain",
-    designation: "Director (Program)",
+    name: "Ms. Zerva Sadiq",
+    designation: "Director Monitoring & Evaluation",
     image: "/person2.png"
   },
   {

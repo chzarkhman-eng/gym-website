@@ -3,6 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, Play, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const heroImages = [
   "/pic1.png",
@@ -108,10 +115,31 @@ export function HeroSection() {
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button variant="outline" className="btn-hero-outline bg-white/10 hover:bg-white/20 border-white/20 text-white backdrop-blur-sm">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Video
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" className="btn-hero-outline bg-white/10 hover:bg-white/20 border-white/20 text-white backdrop-blur-sm">
+                  <Play className="mr-2 h-5 w-5" />
+                  Watch Video
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[800px] p-0 overflow-hidden bg-black border-none">
+                <DialogHeader className="sr-only">
+                  <DialogTitle>PEIMA Introduction Video</DialogTitle>
+                </DialogHeader>
+                <div className="aspect-video w-full">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/Xh0mC_zYstY?autoplay=1"
+                    title="PEIMA Introduction Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+              </DialogContent>
+            </Dialog>
           </motion.div>
 
           {/* Stats Preview */}
