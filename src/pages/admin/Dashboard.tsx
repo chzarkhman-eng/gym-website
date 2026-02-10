@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   LayoutDashboard, Users, FileText, MessageSquare, BarChart3, Settings,
-  Menu, X, Bell, Search, ChevronDown, Home, File, MapPin, LogOut,
+  Menu, X, Bell, Search, ChevronDown, Home, File, MapPin, LogOut, Calendar
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,35 +12,35 @@ import {
 
 const sidebarItems = [
   { name: "Dashboard", icon: Home, path: "/admin" },
-  { name: "Users", icon: Users, path: "/admin/users" },
-  { name: "Content", icon: FileText, path: "/admin/content" },
-  { name: "Messages", icon: MessageSquare, path: "/admin/messages" },
-  { name: "Reports", icon: BarChart3, path: "/admin/reports" },
+  { name: "Members", icon: Users, path: "/admin/users" },
+  { name: "Schedules", icon: Calendar, path: "/admin/content" },
+  { name: "Inquiries", icon: MessageSquare, path: "/admin/messages" },
+  { name: "Performance", icon: BarChart3, path: "/admin/reports" },
   { name: "Settings", icon: Settings, path: "/admin/settings" },
 ];
 
 const statsCards = [
-  { title: "Total Schools", value: "1,247", change: "+12%", color: "bg-gradient-to-r from-peima-gold to-peima-gold-dark" },
-  { title: "Students", value: "567,892", change: "+8.5%", color: "bg-gradient-to-r from-blue-500 to-blue-600" },
-  { title: "Teachers", value: "18,543", change: "+5.2%", color: "bg-gradient-to-r from-green-500 to-green-600" },
-  { title: "Satisfaction", value: "95%", change: "+2.1%", color: "bg-gradient-to-r from-pink-500 to-pink-600" },
+  { title: "Total Members", value: "842", change: "+14%", color: "bg-gradient-to-r from-peima-gold to-peima-gold-dark" },
+  { title: "Active Classes", value: "24", change: "+8%", color: "bg-gradient-to-r from-blue-500 to-blue-600" },
+  { title: "Trainer Team", value: "12", change: "+2", color: "bg-gradient-to-r from-green-500 to-green-600" },
+  { title: "Member Growth", value: "92%", change: "+5%", color: "bg-gradient-to-r from-pink-500 to-pink-600" },
 ];
 
 const barData = [
-  { month: "Jan", value: 30 }, { month: "Feb", value: 28 }, { month: "Mar", value: 35 },
-  { month: "Apr", value: 32 }, { month: "May", value: 40 }, { month: "Jun", value: 45 },
-  { month: "Jul", value: 38 }, { month: "Aug", value: 42 }, { month: "Sep", value: 48 },
+  { month: "Jan", value: 45 }, { month: "Feb", value: 52 }, { month: "Mar", value: 48 },
+  { month: "Apr", value: 61 }, { month: "May", value: 55 }, { month: "Jun", value: 67 },
+  { month: "Jul", value: 72 }, { month: "Aug", value: 85 }, { month: "Sep", value: 94 },
 ];
 
 const areaData = [
-  { name: "Week 1", value: 400 }, { name: "Week 2", value: 300 }, { name: "Week 3", value: 500 },
-  { name: "Week 4", value: 450 }, { name: "Week 5", value: 600 },
+  { name: "Week 1", value: 120 }, { name: "Week 2", value: 150 }, { name: "Week 3", value: 180 },
+  { name: "Week 4", value: 210 }, { name: "Week 5", value: 245 },
 ];
 
 const pieData = [
-  { name: "Completed", value: 45, color: "#1e3a5f" },
-  { name: "In Progress", value: 30, color: "#f5a623" },
-  { name: "Pending", value: 25, color: "#e5e7eb" },
+  { name: "Active", value: 70, color: "#1e3a5f" },
+  { name: "On Hold", value: 15, color: "#f5a623" },
+  { name: "Inactive", value: 15, color: "#e5e7eb" },
 ];
 
 export default function AdminDashboard() {
@@ -54,9 +54,9 @@ export default function AdminDashboard() {
         <div className="p-6 border-b border-white/10">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-peima-gold rounded-full flex items-center justify-center">
-              <span className="text-primary font-bold">P</span>
+              <span className="text-primary font-bold">G</span>
             </div>
-            {sidebarOpen && <span className="font-bold text-lg">PEIMA Admin</span>}
+            {sidebarOpen && <span className="font-bold text-lg uppercase tracking-tight">GOLETA Admin</span>}
           </div>
         </div>
         <nav className="p-4 space-y-2">
@@ -107,7 +107,7 @@ export default function AdminDashboard() {
         {/* Dashboard Content */}
         <main className="flex-1 p-6 overflow-auto">
           <h1 className="text-2xl font-bold text-foreground mb-6">Dashboard Overview</h1>
-          
+
           {/* Stats Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {statsCards.map((stat, i) => (

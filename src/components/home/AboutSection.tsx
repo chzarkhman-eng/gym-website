@@ -8,7 +8,7 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="section-padding bg-background relative overflow-hidden">
+    <section id="about" ref={ref} className="section-padding bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
@@ -21,7 +21,7 @@ export function AboutSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-peima-lg">
               <img
                 src="/peimapic.png"
-                alt="PEIMA Office"
+                alt="Paragon Academy Gym"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
@@ -39,7 +39,7 @@ export function AboutSection() {
                   <Award className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary">10+</div>
+                  <div className="text-3xl font-bold text-primary">15+</div>
                   <div className="text-sm text-muted-foreground">Years of Excellence</div>
                 </div>
               </div>
@@ -52,17 +52,16 @@ export function AboutSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-1 bg-secondary text-primary rounded-full text-sm font-medium mb-4">
-              About PEIMA
+            <span className="inline-block px-4 py-1 bg-secondary text-primary rounded-full text-sm font-medium mb-4 uppercase">
+              About Paragon Academy
             </span>
-            <h2 className="section-title text-foreground mb-6">
-              Government of Punjab’s School Support Programs
+            <h2 className="section-title text-foreground mb-6 uppercase tracking-tighter">
+              Southern California's Premier Martial Arts & Fitness Center
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              The Punjab Education Initiatives Management Authority (PEIMA) is a government body
-              dedicated to designing, implementing, and managing reformatory initiatives in the
-              education sector. We focus on enhancing educational quality in public sector schools
-              through financial and technical assistance.
+              Paragon Academy is dedicated to providing world-class instruction in Brazilian Jiu-Jitsu,
+              Boxing, Kickboxing, and MMA. Founded with a vision to create a community where everyone
+              can thrive, we focus on technical excellence, personal growth, and a relentless pursuit of improvement.
             </p>
 
             {/* Vision & Mission Cards */}
@@ -72,10 +71,9 @@ export function AboutSection() {
                   <Eye className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-1">Our Vision</h4>
+                  <h4 className="font-bold text-foreground mb-1 uppercase tracking-tight">Our Vision</h4>
                   <p className="text-sm text-muted-foreground">
-                    To become a leading institution for quality public education in Pakistan,
-                    setting benchmarks for educational excellence.
+                    To be a global leader in martial arts instruction, fostering a community of champions on and off the mat.
                   </p>
                 </div>
               </div>
@@ -85,10 +83,9 @@ export function AboutSection() {
                   <Target className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground mb-1">Our Mission</h4>
+                  <h4 className="font-bold text-foreground mb-1 uppercase tracking-tight">Our Mission</h4>
                   <p className="text-sm text-muted-foreground">
-                    Promoting free quality education through innovative programs, teacher
-                    development, and infrastructure enhancement.
+                    Empowering individuals through elite training, discipline, and a supportive family environment to reach their full potential.
                   </p>
                 </div>
               </div>
@@ -97,10 +94,10 @@ export function AboutSection() {
             {/* Key Points */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                "Quality Assurance Programs",
-                "Teacher Professional Development",
-                "Infrastructure Modernization",
-                "Digital Learning Integration",
+                "Elite Black Belt Instruction",
+                "Beginner & Pro Programs",
+                "Advanced Training Facility",
+                "Supportive Team Culture",
               ].map((point, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <Check className="h-5 w-5 text-peima-green" />

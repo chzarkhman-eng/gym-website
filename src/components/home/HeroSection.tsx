@@ -78,95 +78,68 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
-        <div className="max-w-4xl">
-          {/* <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6"
-          >
-            Punjab Education
-            <br></br>
-            <span className="gradient-text">Initiatives</span>
-            <br />
-            Management Authority
-          </motion.h1> */}
+        <motion.h1
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-primary-foreground leading-tight mb-6 uppercase tracking-tighter"
+        >
+          IT'S NOT JUST A GYM.
+          <br />
+          <span className="gradient-text">IT'S YOUR PROVING GROUND.</span>
+        </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-lg md:text-xl text-primary-foreground/90 font-medium mb-8 max-w-2xl mx-auto drop-shadow-md"
-          >
-            Promoting free quality education in public sector schools through
-            financial and technical assistance, implementing reformatory and
-            dynamic initiatives for a brighter future.
-          </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-lg md:text-xl text-primary-foreground/90 font-medium mb-8 max-w-2xl mx-auto drop-shadow-md"
+        >
+          Stop dreaming of a stronger, more confident you. Start building it. We provide more than just equipment—we provide a community, expert guidance, and the relentless motivation you need to break your limits. Every rep, every drop of sweat, is a step towards the person you're meant to be.
+        </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex flex-wrap gap-4 justify-center"
-          >
-            <Link to="/about">
-              <Button className="btn-hero shadow-lg shadow-peima-gold/20">
-                Explore Our Work
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline" className="btn-hero-outline bg-white/10 hover:bg-white/20 border-white/20 text-white backdrop-blur-sm">
-                  <Play className="mr-2 h-5 w-5" />
-                  Watch Video
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[800px] p-0 overflow-hidden bg-black border-none">
-                <DialogHeader className="sr-only">
-                  <DialogTitle>PEIMA Introduction Video</DialogTitle>
-                </DialogHeader>
-                <div className="aspect-video w-full">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/Xh0mC_zYstY?autoplay=1"
-                    title="PEIMA Introduction Video"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    className="w-full h-full"
-                  ></iframe>
-                </div>
-              </DialogContent>
-            </Dialog>
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          className="flex flex-wrap gap-4 justify-center"
+        >
+          <Link to="/contact">
+            <Button className="btn-hero shadow-lg shadow-peima-gold/20 text-lg py-7 px-8 uppercase">
+              Try For FREE Class
+              <ChevronRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+          <Button variant="outline" className="border-white/20 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 text-lg py-7 px-8 uppercase border-2">
+            <Play className="mr-2 h-5 w-5 fill-peima-gold text-peima-gold" />
+            Watch Video
+          </Button>
+        </motion.div>
 
-          {/* Stats Preview */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
-          >
-            {[
-              { value: "4276+", label: "Schools Managed" },
-              { value: "590820+", label: "Students Enrolled" },
-              { value: "21095", label: "Teachers Trained" },
-              { value: "41", label: "Districts Covered" },
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="text-center p-4 rounded-xl bg-black/20 backdrop-blur-md border border-white/10 hover:bg-black/30 transition-colors"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-peima-gold mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-primary-foreground/90 font-medium shadow-black">{stat.label}</div>
+        {/* Stats Preview */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
+        >
+          {[
+            { value: "5000+", label: "People Trained" },
+            { value: "50+", label: "Expert Trainers" },
+            { value: "250+", label: "Success Stories" },
+            { value: "15+", label: "Programs" },
+          ].map((stat, index) => (
+            <div
+              key={index}
+              className="text-center p-4 rounded-xl bg-black/20 backdrop-blur-md border border-white/10 hover:bg-black/30 transition-colors"
+            >
+              <div className="text-3xl md:text-4xl font-bold text-peima-gold mb-1">
+                {stat.value}
               </div>
-            ))}
-          </motion.div>
-        </div>
+              <div className="text-sm text-primary-foreground/90 font-medium shadow-black uppercase tracking-wider">{stat.label}</div>
+            </div>
+          ))}
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}

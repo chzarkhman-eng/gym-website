@@ -5,66 +5,78 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const stats = [
   {
-    value: 4276,
+    value: 5000,
     suffix: "+",
-    label: "Schools Under Management",
-    description: "Public sector schools managed across Punjab",
+    label: "People Trained",
+    description: "Athletes and fitness enthusiasts who transformed their lives",
   },
   {
-    value: 590820,
-    suffix: "",
-    label: "Students Enrolled",
-    description: "Children receiving quality education",
-  },
-  {
-    value: 21095,
+    value: 50,
     suffix: "+",
-    label: "Teachers Trained",
-    description: "Professional development programs completed",
+    label: "Expert Trainers",
+    description: "World-class instructors dedicated to your growth",
   },
   {
-    value: 41,
-    suffix: "",
-    label: "Districts Covered",
-    description: "Comprehensive coverage across Punjab",
+    value: 250,
+    suffix: "+",
+    label: "Success Stories",
+    description: "Real people achieving remarkable fitness milestones",
+  },
+  {
+    value: 15,
+    suffix: "+",
+    label: "Programs",
+    description: "Diverse training regimes from Jiu-Jitsu to MMA",
   },
 ];
 
 const leadershipMessages = [
   {
-    role: "Chairperson's Message",
-    name: "Mr. Ali Raza",
-    image: "/person1.png",
-    description: "The going on epoch is an era of knowledge. The role of knowledge has come to be identified as an engine of growth and a factor of production. Hence the buzzword of 'knowledge economies' has rained currency in the development of literature. In today's world, the knowledge provides the foundation stone on which the edifice of society has been erected. Therefore, for developing countries like Pakistan to be able to break the straitjacket of poverty, and retention of under-development, the related policy focuses on education to become the topmost national imperative and priority towards its goals.\n\nI am immensely proud that the Government of Punjab has risen to meet the challenges and trying the best efforts to fulfill its promise of promoting education in all over the province through the establishment of the Public-Private Partnership. The PEIMA is an appreciating supportive body for strengthening school education in the province. As per the 17 prescribed functions, the Commission would be able to undertake various programs aimed at the promotion of education in the province through a Public-Private Partnership."
+    role: "Black belt, training for 19 years.",
+    name: "Frank R.",
+    image: "/sport1.png",
+    description: "I enjoy dropping into gyms when I travel and the owner John was world class. Super friendly, welcoming, and his students were a class act. The instruction was detailed and just when you think you’ve seen it all, you learn new little details. All of the students were very friendly and treated me with respect. 10/10 will stop by again and couldn’t recommend it more for new students."
   },
   {
-    role: "Chief Executive Officer's Message",
-    name: "Mr. Imtiaz Shahid Gondal",
-    image: "/person3.png",
-    description: "The Punjab Education Initiatives Management Authority (PEIMA) is geared towards building an educated Punjab by providing quality education through Public-Private Partnerships.\n\nPEIMA is committed to strengthening the existing assets and introducing new initiatives to improving equitable access, improving academic standards, and introducing mandatory faculty development programs to improve the teaching standards are a priority for PEIMA.\n\nMonitoring the educational standards of students is important. The assessment tools were developed by adopting best practices in the world and standardized test evaluation was ensured through the E-marking of assessment scripts.\n\nI strongly believe that education is the single best investment that can make our future. PEIMA is committed to uplifting the education sector in Punjab."
+    role: "Life Transformed",
+    name: "Jennifer S.",
+    image: "/sport2.png",
+    description: "I don't know how else to say it, but this gym has changed my life for the better! I even sought out a new job to make sure I could pay the membership—worth every penny. I started out kickboxing, and have now trained Jiu-Jitsu for the last two years. The sport is amazing, especially for women in regards to self defense and self confidence. The instructors are dedicated, extremely proficient, patient, motivating, and fun. Paragon becomes family! If you've been on the fence about trying boxing, kickboxing, wrestling, or Jiu-Jitsu (GREAT kids' classes for anti-bullying!), start a trial today."
+  },
+  {
+    role: "Relentless Community",
+    name: "Will E.",
+    image: "/sport3.png",
+    description: "Just calling this place a gym is a disservice. It's a community where everyone is there to lift each other up. I had zero martial arts experience and was treated like a long-time member the first time I walked in the door. This place and Jiu-Jitsu truly changed my life and how I think about handling adversity going forward. The classes and workouts are awesome, but the instructors and other students are what keeps you coming back. It truly is a family."
+  },
+  {
+    role: "Elite Training",
+    name: "Billy H.",
+    image: "/sport4.png",
+    description: "Awesome gym! I've been training MMA for over 10 years and fighting as an amateur cage fighter. I've trained at high level gyms all over the country and Paragon has an elite level to rival any gym I've trained in. Truly a wealth of knowledge from Jiu-Jitsu, wrestling, Muay Thai and boxing! The teachers are awesome and Paragon has so many different levels of training partners, from beginners to advanced professionals. If you're looking to get legit training, the only place I would recommend is Paragon!"
   }
 ];
 
 const leadershipTeam = [
   {
-    name: "Mr. Ali Raza",
-    designation: "Chairperson",
-    image: "/person1.png"
+    name: "John Miller",
+    designation: "Head Coach & BJJ Black Belt",
+    image: "/team1.png"
   },
   {
-    name: "MR. Imtiaz Shahid Gondal",
-    designation: "Chief Executive Officer",
-    image: "/person3.png"
+    name: "David Thompson",
+    designation: "Elite Boxing Specialist",
+    image: "/team2.png"
   },
   {
-    name: "Ms. Zerva Sadiq",
-    designation: "Director Monitoring & Evaluation",
-    image: "/person2.png"
+    name: "Michael Ross",
+    designation: "MMA Conditioning Expert",
+    image: "/team3.png"
   },
   {
-    name: "Ms. Sobia Samreen",
-    designation: "Director( Corporate Cooperations)",
-    image: "/person4.png"
+    name: "Sarah Parker",
+    designation: "Program Coordinator",
+    image: "/team4.png"
   }
 ];
 
@@ -148,9 +160,9 @@ export function StatsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title text-primary-foreground mb-4">Our Impact in Numbers</h2>
+          <h2 className="section-title text-primary-foreground mb-4 uppercase tracking-tighter">Our Fitness Impact</h2>
           <p className="section-subtitle text-primary-foreground/70">
-            Transforming education across Punjab with measurable results
+            Building a stronger community through dedicated training
           </p>
         </motion.div>
 
@@ -173,8 +185,8 @@ export function StatsSection() {
         </div>
 
         {/* Sliding Leadership Message Section */}
-        <div className="max-w-6xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl relative">
-          <AnimatePresence initial={false} custom={direction}>
+        <div className="max-w-6xl mx-auto bg-white rounded-xl overflow-hidden shadow-2xl relative min-h-[500px] md:min-h-[450px]">
+          <AnimatePresence mode="wait" initial={false} custom={direction}>
             <motion.div
               key={currentIndex}
               custom={direction}
@@ -184,46 +196,50 @@ export function StatsSection() {
               exit="exit"
               transition={{
                 x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2 }
+                opacity: { duration: 0.3 }
               }}
-              className="flex flex-col md:flex-row min-h-[400px]"
+              className="flex flex-col md:flex-row h-full"
             >
               {/* Image Container with Controls */}
-              <div className="w-full md:w-2/5 relative overflow-hidden group">
+              <div className="w-full md:w-2/5 relative overflow-hidden group min-h-[300px] md:min-h-full">
                 <img
                   src={leadershipMessages[currentIndex].image}
                   alt={leadershipMessages[currentIndex].name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover absolute inset-0"
                 />
 
                 {/* Navigation Buttons */}
                 <button
                   onClick={prevSlide}
-                  className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white p-2 transition-colors z-20"
+                  className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 transition-colors z-20 rounded-r-lg"
                 >
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white p-2 transition-colors z-20"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 transition-colors z-20 rounded-l-lg"
                 >
                   <ChevronRight className="w-6 h-6" />
                 </button>
               </div>
 
               {/* Text Content Container */}
-              <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
-                <h3 className="text-xl font-bold text-green-600 mb-2">
-                  {leadershipMessages[currentIndex].role}
-                </h3>
-                <h4 className="text-2xl font-bold text-green-500 mb-6">
-                  {leadershipMessages[currentIndex].name}
-                </h4>
-
-
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  {leadershipMessages[currentIndex].description}
-                </p>
+              <div className="w-full md:w-3/5 p-8 md:p-12 flex flex-col justify-center bg-white">
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <h3 className="text-xl font-bold text-primary mb-2">
+                    {leadershipMessages[currentIndex].role}
+                  </h3>
+                  <h4 className="text-3xl font-bold text-peima-gold mb-6">
+                    {leadershipMessages[currentIndex].name}
+                  </h4>
+                  <p className="text-gray-700 leading-relaxed text-lg italic">
+                    "{leadershipMessages[currentIndex].description}"
+                  </p>
+                </motion.div>
               </div>
             </motion.div>
           </AnimatePresence>

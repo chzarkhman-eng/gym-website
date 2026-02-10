@@ -76,7 +76,7 @@ export function CTASection() {
             </h2>
             <p className="text-primary-foreground/80 mb-8 leading-relaxed">
               Whether you have questions about our programs, want to collaborate, or need
-              assistance with educational initiatives, our team is ready to support you.
+              assistance with your training, our team is ready to support you.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -87,7 +87,7 @@ export function CTASection() {
                 <div>
                   <h4 className="font-bold mb-1">Our Location</h4>
                   <p className="text-primary-foreground/70 text-sm">
-                    50 Babar Block, New Garden Town, Lahore, Punjab, Pakistan
+                    5940 Calle Real, Goleta, CA 93117, USA
                   </p>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export function CTASection() {
                 <div>
                   <h4 className="font-bold mb-1">Phone Number</h4>
                   <p className="text-primary-foreground/70 text-sm">
-                    +92 42 99232040
+                    +1 805-555-0123
                   </p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export function CTASection() {
                 <div>
                   <h4 className="font-bold mb-1">Email Address</h4>
                   <p className="text-primary-foreground/70 text-sm">
-                    info@peima.punjab.gov.pk
+                    info@paragongoleta.com
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export function CTASection() {
                 <div>
                   <h4 className="font-bold mb-1">Working Hours</h4>
                   <p className="text-primary-foreground/70 text-sm">
-                    Mon - Fri: 9:00 AM - 5:00 PM
+                    Mon - Fri: 6:00 AM - 9:00 PM
                   </p>
                 </div>
               </div>

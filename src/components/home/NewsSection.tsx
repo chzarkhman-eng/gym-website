@@ -10,60 +10,60 @@ import trainingWorkshop from "@/assets/training-workshop.jpg";
 const news = [
   {
     id: 1,
-    title: "PEIMA Schools Achieve Record-Breaking QAT Results 2025",
+    title: "Goleta Open Championships: Paragon Team Dominates with 12 Gold Medals",
     excerpt:
-      "Students from PEIMA-managed schools demonstrate exceptional performance in Quality Assessment Test with a 15% improvement over previous year.",
-    date: "April 21, 2025",
-    category: "Achievement",
-    image: studentsLearning,
-    views: 1256,
+      "Our athletes showcased incredible skill and discipline at the recent Goleta Open, securing the top spot in the overall team rankings.",
+    date: "February 15, 2026",
+    category: "Competition",
+    image: "/sport1.png",
+    views: 3452,
   },
   {
     id: 2,
-    title: "New Teacher Training Program Launched Across 36 Districts",
+    title: "Upcoming Brazilian Jiu-Jitsu Seminar with World Class Black Belts",
     excerpt:
-      "Comprehensive professional development initiative aims to enhance teaching quality in all PEIMA schools across Punjab province.",
-    date: "March 28, 2025",
-    category: "Training",
-    image: trainingWorkshop,
-    views: 892,
+      "Join us next month for an intensive theoretical and practical BJJ seminar focusing on advanced guard recovery systems.",
+    date: "March 10, 2026",
+    category: "Seminar",
+    image: "/sport2.png",
+    views: 1892,
   },
   {
     id: 3,
-    title: "Free Textbook Distribution Completed for Academic Year 2025",
+    title: "New Morning Muay Thai Classes Starting This Monday",
     excerpt:
-      "Over 2 million textbooks distributed to students across PEIMA schools ensuring equal access to quality learning materials.",
-    date: "March 14, 2025",
-    category: "Resources",
-    image: studentsLearning,
-    views: 1534,
+      "Due to popular demand, we are expanding our morning schedule to include dedicated Muay Thai striking sessions starting at 6:00 AM.",
+    date: "February 22, 2026",
+    category: "Schedule",
+    image: "/sport3.png",
+    views: 2134,
   },
 ];
 
 const announcements = [
   {
-    title: "Reallocation - PEIMA (PSSP) SPELL-XI Apply Online",
-    date: "Apr 21, 2025",
+    title: "Nutrition & Weight Cutting Workshop - Register Now",
+    date: "Feb 20, 2026",
     isNew: true,
   },
   {
-    title: "INDENT OF FREE TEXT BOOKS 2025",
-    date: "Mar 21, 2025",
+    title: "Holiday Schedule Update: Gym Closed for Local Festival",
+    date: "Feb 18, 2026",
     isNew: true,
   },
   {
-    title: "Schedule and List of selected PEIMA Schools for LSA-2025",
-    date: "Mar 14, 2025",
+    title: "New Apparel Drop: Official Paragon Goleta Hoodies",
+    date: "Feb 15, 2026",
     isNew: false,
   },
   {
-    title: "B-Form availability for All Students Appearing in QAT 2025",
-    date: "Mar 13, 2025",
+    title: "Youth Anti-Bullying Program: Spring Enrollment Open",
+    date: "Feb 10, 2026",
     isNew: false,
   },
   {
-    title: "Date Sheet QAT 2025",
-    date: "Mar 03, 2025",
+    title: "Member of the Month: Outstanding Dedication to Training",
+    date: "Feb 05, 2026",
     isNew: false,
   },
 ];
@@ -86,7 +86,7 @@ export function NewsSection() {
           </span>
           <h2 className="section-title text-foreground mb-4">News & Announcements</h2>
           <p className="section-subtitle">
-            Latest updates, events, and important announcements from PEIMA
+            Latest updates, events, and important news from Paragon Goleta
           </p>
         </motion.div>
 

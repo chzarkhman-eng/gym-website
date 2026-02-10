@@ -12,73 +12,51 @@ import aboutBuilding from "@/assets/about-building.jpg";
 const newsItems = [
   {
     id: 1,
-    title: "PEIMA Schools Achieve Record-Breaking QAT Results 2025",
-    excerpt: "Students from PEIMA-managed schools demonstrate exceptional performance in Quality Assessment Test with a 15% improvement over previous year. The results highlight the effectiveness of our comprehensive educational initiatives.",
+    title: "Goleta Open Championships: Paragon Team Dominates with 12 Gold Medals",
+    excerpt: "Our athletes showcased incredible skill and discipline at the recent Goleta Open, securing the top spot in the overall team rankings. The victory underscores our technical superiority and community spirit.",
     content: "Full article content...",
-    date: "April 21, 2025",
-    category: "Achievement",
-    image: studentsLearning,
-    views: 1256,
-    readTime: "5 min",
-  },
-  {
-    id: 2,
-    title: "New Teacher Training Program Launched Across 36 Districts",
-    excerpt: "Comprehensive professional development initiative aims to enhance teaching quality in all PEIMA schools across Punjab province. Over 5,000 teachers will participate in the first phase.",
-    content: "Full article content...",
-    date: "March 28, 2025",
-    category: "Training",
-    image: trainingWorkshop,
-    views: 892,
+    date: "February 15, 2026",
+    category: "Competition",
+    image: "/sport1.png",
+    views: 3452,
     readTime: "4 min",
   },
   {
-    id: 3,
-    title: "Free Textbook Distribution Completed for Academic Year 2025",
-    excerpt: "Over 2 million textbooks distributed to students across PEIMA schools ensuring equal access to quality learning materials. The initiative covered all grades from 1 to 12.",
+    id: 2,
+    title: "Upcoming Brazilian Jiu-Jitsu Seminar with World Class Black Belts",
+    excerpt: "Join us next month for an intensive theoretical and practical BJJ seminar focusing on advanced guard recovery systems. Perfect for practitioners of all levels seeking to refine their defense.",
     content: "Full article content...",
-    date: "March 14, 2025",
-    category: "Resources",
-    image: aboutBuilding,
-    views: 1534,
+    date: "March 10, 2026",
+    category: "Seminar",
+    image: "/sport2.png",
+    views: 1892,
+    readTime: "6 min",
+  },
+  {
+    id: 3,
+    title: "New Morning Muay Thai Classes Starting This Monday",
+    excerpt: "Due to popular demand, we are expanding our morning schedule to include dedicated Muay Thai striking sessions starting at 6:00 AM. Start your day with high-intensity technical training.",
+    content: "Full article content...",
+    date: "February 22, 2026",
+    category: "Schedule",
+    image: "/sport3.png",
+    views: 2134,
     readTime: "3 min",
   },
   {
     id: 4,
-    title: "Digital Learning Centers Established in 100 Schools",
-    excerpt: "PEIMA expands its EdTech initiative with state-of-the-art computer labs and smart classrooms in underserved areas. Each center is equipped with 30 computers and high-speed internet.",
+    title: "Nutrition & Weight Cutting Workshop - Register Now",
+    excerpt: "Learn the proper mechanics of fueling for performance and safety in weight-sensitive sports from our expert coaching staff. Registration is now open to all members.",
     content: "Full article content...",
-    date: "February 20, 2025",
-    category: "Technology",
-    image: studentsLearning,
-    views: 756,
-    readTime: "4 min",
-  },
-  {
-    id: 5,
-    title: "PEIMA Partners with International Education Organizations",
-    excerpt: "Strategic partnerships formed with UNESCO and British Council to enhance educational quality and bring international best practices to Punjab's public schools.",
-    content: "Full article content...",
-    date: "February 10, 2025",
-    category: "Partnership",
-    image: trainingWorkshop,
-    views: 623,
-    readTime: "6 min",
-  },
-  {
-    id: 6,
-    title: "Annual Teacher Awards Ceremony Celebrates Excellence",
-    excerpt: "Outstanding educators recognized for their dedication and innovative teaching methods at the annual PEIMA Teacher Awards. 50 teachers received awards across various categories.",
-    content: "Full article content...",
-    date: "January 25, 2025",
-    category: "Event",
-    image: aboutBuilding,
-    views: 945,
-    readTime: "3 min",
+    date: "February 20, 2026",
+    category: "Workshop",
+    image: "/sport4.png",
+    views: 1256,
+    readTime: "5 min",
   },
 ];
 
-const categories = ["All", "Achievement", "Training", "Resources", "Technology", "Partnership", "Event"];
+const categories = ["All", "Competition", "Seminar", "Schedule", "Workshop"];
 
 export default function News() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -106,7 +84,7 @@ export default function News() {
               News & Updates
             </h1>
             <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-              Stay informed about the latest developments at PEIMA
+              Stay informed about the latest developments at Paragon Goleta
             </p>
           </motion.div>
         </div>

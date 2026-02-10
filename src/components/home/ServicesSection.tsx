@@ -12,54 +12,24 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const services = [
+const programs = [
   {
-    icon: GraduationCap,
-    title: "School Management",
-    description:
-      "Comprehensive management of public sector schools with focus on quality education delivery and administrative excellence.",
-    color: "from-blue-500 to-blue-600",
-    link: "/services#management",
+    image: "/boxing.png",
+    title: "Boxing",
+    description: "Master the art of striking. Our boxing program focuses on technique, footwork, and conditioning for all levels, from beginners to pros.",
+    link: "/training",
   },
   {
-    icon: Users,
-    title: "Teacher Training",
-    description:
-      "Professional development programs for educators to enhance teaching methodologies and student engagement techniques.",
-    color: "from-green-500 to-green-600",
-    link: "/services#training",
+    image: "/grabb.png",
+    title: "Grappling",
+    description: "The core of ground fighting. Learn the essential techniques of No-Gi grappling, wrestling, and submission tactics to dominate on the mat.",
+    link: "/training",
   },
   {
-    icon: Building2,
-    title: "Infrastructure Development",
-    description:
-      "Modernization of school facilities including classrooms, libraries, and digital learning environments.",
-    color: "from-orange-500 to-orange-600",
-    link: "/projects/infrastructure",
-  },
-  {
-    icon: BookOpen,
-    title: "Curriculum Support",
-    description:
-      "Implementation of updated curriculum standards and provision of quality learning materials for students.",
-    color: "from-purple-500 to-purple-600",
-    link: "/services#curriculum",
-  },
-  {
-    icon: Lightbulb,
-    title: "EdTech Integration",
-    description:
-      "Introduction of digital learning tools and smart classroom technologies to enhance educational outcomes.",
-    color: "from-pink-500 to-pink-600",
-    link: "/projects/edtech",
-  },
-  {
-    icon: BarChart3,
-    title: "Quality Assurance",
-    description:
-      "Regular monitoring and evaluation of educational standards through comprehensive assessment programs.",
-    color: "from-cyan-500 to-cyan-600",
-    link: "/services#quality",
+    image: "/jiju.png",
+    title: "Jiu-Jitsu",
+    description: "The gentle art of leverage. Master Brazilian Jiu-Jitsu with our world-class instructors. Perfect for self-defense, competition, and fitness.",
+    link: "/training",
   },
 ];
 
@@ -68,7 +38,7 @@ export function ServicesSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="section-padding bg-background relative">
+    <section id="training" ref={ref} className="section-padding bg-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -86,39 +56,43 @@ export function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1 bg-secondary text-primary rounded-full text-sm font-medium mb-4">
-            What We Do
+          <span className="inline-block px-4 py-1 bg-secondary text-primary rounded-full text-sm font-medium mb-4 uppercase">
+            Our Programs
           </span>
-          <h2 className="section-title text-foreground mb-4">Our Services</h2>
+          <h2 className="section-title text-foreground mb-4 uppercase tracking-tighter">Training Programs</h2>
           <p className="section-subtitle">
-            Comprehensive educational initiatives designed to transform Punjab's public education system
+            Elite training programs designed to push your limits and transform your skills
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {programs.map((program, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Link to={service.link} className="block">
-                <div className="service-card h-full group">
-                  <div
-                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500`}
-                  >
-                    <service.icon className="h-8 w-8 text-white" />
+              <Link to={program.link} className="block group">
+                <div className="bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full border border-border">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={program.image}
+                      alt={program.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="flex items-center text-primary font-medium text-sm group-hover:gap-3 gap-1 transition-all">
-                    Learn More
-                    <ArrowRight className="h-4 w-4" />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors uppercase tracking-tight">
+                      {program.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-3">
+                      {program.description}
+                    </p>
+                    <div className="flex items-center text-primary font-bold text-sm tracking-uppercase group-hover:gap-3 gap-1 transition-all">
+                      VIEW PROGRAM DETAILS
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
                   </div>
                 </div>
               </Link>

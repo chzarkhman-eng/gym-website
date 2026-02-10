@@ -18,11 +18,11 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4 uppercase tracking-tighter">
               Contact Us
             </h1>
-            <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
-              Get in touch with us for any inquiries or support
+            <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto uppercase tracking-wide">
+              Ready to start your journey? Get in touch with us today.
             </p>
           </motion.div>
         </div>
@@ -39,67 +39,67 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="bg-card p-8 rounded-2xl shadow-peima-md">
+              <div className="bg-card p-8 rounded-2xl shadow-peima-md border border-border">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
                     <MessageSquare className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-foreground">Send Us a Message</h2>
-                    <p className="text-muted-foreground text-sm">We'll respond within 24 hours</p>
+                    <h2 className="text-2xl font-bold text-foreground uppercase tracking-tight">Send Us a Message</h2>
+                    <p className="text-muted-foreground text-sm uppercase">We'll respond within 24 hours</p>
                   </div>
                 </div>
 
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Full Name</Label>
+                      <Label htmlFor="name" className="uppercase text-xs font-bold tracking-widest text-muted-foreground">Full Name</Label>
                       <Input
                         id="name"
                         placeholder="Your name"
-                        className="py-6 input-focus"
+                        className="py-6 input-focus rounded-xl bg-secondary/30 border-none"
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email Address</Label>
+                      <Label htmlFor="email" className="uppercase text-xs font-bold tracking-widest text-muted-foreground">Email Address</Label>
                       <Input
                         id="email"
                         type="email"
                         placeholder="your@email.com"
-                        className="py-6 input-focus"
+                        className="py-6 input-focus rounded-xl bg-secondary/30 border-none"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
+                      <Label htmlFor="phone" className="uppercase text-xs font-bold tracking-widest text-muted-foreground">Phone Number</Label>
                       <Input
                         id="phone"
-                        placeholder="+92 300 1234567"
-                        className="py-6 input-focus"
+                        placeholder="(805) 681-1691"
+                        className="py-6 input-focus rounded-xl bg-secondary/30 border-none"
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="subject">Subject</Label>
+                      <Label htmlFor="subject" className="uppercase text-xs font-bold tracking-widest text-muted-foreground">Subject</Label>
                       <Input
                         id="subject"
                         placeholder="What is this about?"
-                        className="py-6 input-focus"
+                        className="py-6 input-focus rounded-xl bg-secondary/30 border-none"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Your Message</Label>
+                    <Label htmlFor="message" className="uppercase text-xs font-bold tracking-widest text-muted-foreground">Your Message</Label>
                     <Textarea
                       id="message"
                       placeholder="Write your message here..."
-                      className="min-h-[150px] input-focus"
+                      className="min-h-[150px] input-focus rounded-xl bg-secondary/30 border-none"
                     />
                   </div>
 
-                  <Button className="w-full bg-gradient-to-r from-peima-gold to-peima-gold-dark text-primary font-semibold py-6 hover:shadow-peima-gold">
+                  <Button className="w-full bg-gradient-to-r from-peima-gold to-peima-gold-dark text-primary font-bold py-7 rounded-xl uppercase tracking-widest shadow-lg shadow-peima-gold/20 hover:scale-[1.02] transition-transform">
                     <Send className="mr-2 h-4 w-4" />
                     Send Message
                   </Button>
@@ -114,55 +114,55 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl font-bold text-foreground mb-6">Get In Touch</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6 uppercase tracking-tighter">Get In Touch</h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Whether you have questions about our programs, want to collaborate, or need
-                assistance with educational initiatives, our team is ready to support you.
-                Feel free to reach out through any of the channels below.
+                Whether you have questions about our BJJ programs, want to schedule a trial class,
+                or need information about memberships, our team is ready to support you.
+                Step onto the mat and start your transformation today.
               </p>
 
               <div className="space-y-6 mb-10">
-                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl">
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl border border-border">
                   <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shrink-0">
                     <MapPin className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Office Address</h4>
+                    <h4 className="font-bold text-foreground mb-1 uppercase tracking-widest text-sm">Gym Address</h4>
                     <p className="text-muted-foreground">
-                      50 Babar Block Garden Town, Lahore
+                      5940 Calle Real, Goleta, CA 93117, USA
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl">
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl border border-border">
                   <div className="w-12 h-12 bg-peima-gold rounded-xl flex items-center justify-center shrink-0">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Phone Number</h4>
-                    <p className="text-muted-foreground">(042) 99232040</p>
+                    <h4 className="font-bold text-foreground mb-1 uppercase tracking-widest text-sm">Phone Number</h4>
+                    <p className="text-muted-foreground">(805) 681-1691</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl">
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl border border-border">
                   <div className="w-12 h-12 bg-peima-green rounded-xl flex items-center justify-center shrink-0">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Email Addresses</h4>
-                    <p className="text-muted-foreground">info@peima.punjab.gov.pk</p>
-                    <p className="text-muted-foreground">support@peima.punjab.gov.pk</p>
+                    <h4 className="font-bold text-foreground mb-1 uppercase tracking-widest text-sm">Email Address</h4>
+                    <p className="text-muted-foreground">paragonbjjgoleta@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl">
+                <div className="flex items-start gap-4 p-4 bg-secondary/50 rounded-xl border border-border">
                   <div className="w-12 h-12 bg-peima-sky-deep rounded-xl flex items-center justify-center shrink-0">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Working Hours</h4>
-                    <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-muted-foreground">Saturday - Sunday: Closed</p>
+                    <h4 className="font-bold text-foreground mb-1 uppercase tracking-widest text-sm">Gym Hours</h4>
+                    <p className="text-muted-foreground">Monday - Friday: 6:00 AM - 9:00 PM</p>
+                    <p className="text-muted-foreground">Saturday: 9:00 AM - 1:00 PM</p>
+                    <p className="text-muted-foreground">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
